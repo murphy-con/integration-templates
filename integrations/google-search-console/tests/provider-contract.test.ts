@@ -90,6 +90,26 @@ describe('Google Search Console provider contract', () => {
         await inspectUrl.exec({ post } as never, { siteUrl, inspectionUrl: `${siteUrl}page`, languageCode: 'de-CH' });
         expect(post).toHaveBeenCalledWith(expect.objectContaining({ data: { siteUrl, inspectionUrl: `${siteUrl}page`, languageCode: 'de-CH' } }));
     });
+    it('drops undocumented inspection fields at every output level', async () => {
+        const post = vi.fn().mockResolvedValue({ data: {
+            inspectionResult: {
+                inspectionResultLink: 'https://search.google.com/',
+                unknownTopLevel: { privateField: 'do-not-return' },
+                indexStatusResult: { coverageState: 'Indexed', unknownNested: { privateField: 'do-not-return' } },
+                ampResult: { verdict: 'PASS', unknownIssue: { privateField: 'do-not-return' } },
+                mobileUsabilityResult: { verdict: 'PASS', unknownIssue: { privateField: 'do-not-return' } },
+                richResultsResult: { verdict: 'PASS', unknownIssue: { privateField: 'do-not-return' } }
+            }
+        } });
+        const output = await inspectUrl.exec({ post } as never, { siteUrl, inspectionUrl: `${siteUrl}page` });
+        expect(output).toEqual({ inspectionResult: {
+            inspectionResultLink: 'https://search.google.com/',
+            indexStatusResult: { coverageState: 'Indexed' },
+            ampResult: { verdict: 'PASS' },
+            mobileUsabilityResult: { verdict: 'PASS' },
+            richResultsResult: { verdict: 'PASS' }
+        } });
+    });
     it('rejects duplicate grouping dimensions', () => {
         expect(queryAnalytics.input.safeParse({ siteUrl, startDate: '2026-08-01', endDate: '2026-08-07', dimensions: ['query', 'query'] }).success).toBe(false);
     });

@@ -40,16 +40,14 @@ export const AnalyticsSchema = z
     })
     .strict();
 
-// Inspection has many evolving issue subtypes; validate the documented envelope
-// and preserve nested diagnostic fields instead of silently discarding them.
+// Project only documented summary fields. Unexpected diagnostics can include
+// sensitive provider data and must not be forwarded through the Action output.
 export const InspectionSchema = z.object({
-    inspectionResult: z
-        .object({
-            inspectionResultLink: z.string().optional(),
-            indexStatusResult: z.object({ coverageState: z.string().optional() }).passthrough().optional(),
-            ampResult: z.object({}).passthrough().optional(),
-            mobileUsabilityResult: z.object({}).passthrough().optional(),
-            richResultsResult: z.object({}).passthrough().optional()
-        })
-        .passthrough()
+    inspectionResult: z.object({
+        inspectionResultLink: z.string().optional(),
+        indexStatusResult: z.object({ coverageState: z.string().optional() }).optional(),
+        ampResult: z.object({ verdict: z.string().optional() }).optional(),
+        mobileUsabilityResult: z.object({ verdict: z.string().optional() }).optional(),
+        richResultsResult: z.object({ verdict: z.string().optional() }).optional()
+    })
 });
