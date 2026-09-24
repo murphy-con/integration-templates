@@ -2803,6 +2803,14 @@ import './google-mail/actions/update-vacation-settings.js';
 import './google-mail/actions/verify-send-as-alias.js';
 import './google-mail/actions/watch-mailbox.js';
 
+// -- Integration: google-search-console
+import './google-search-console/actions/get-site.js';
+import './google-search-console/actions/get-sitemap.js';
+import './google-search-console/actions/inspect-url.js';
+import './google-search-console/actions/list-sitemaps.js';
+import './google-search-console/actions/list-sites.js';
+import './google-search-console/actions/query-analytics.js';
+
 // -- Integration: google-sheet
 import './google-sheet/syncs/rows.js';
 import './google-sheet/syncs/worksheets.js';
