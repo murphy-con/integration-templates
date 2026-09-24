@@ -3866,6 +3866,21 @@ import './meilisearch/actions/get-task.js';
 import './meilisearch/actions/search-documents.js';
 import './meilisearch/actions/update-documents.js';
 
+// -- Integration: meta-marketing-api
+import './meta-marketing-api/actions/create-ad-creative.js';
+import './meta-marketing-api/actions/create-ad-set.js';
+import './meta-marketing-api/actions/create-ad.js';
+import './meta-marketing-api/actions/create-campaign.js';
+import './meta-marketing-api/actions/get-insights.js';
+import './meta-marketing-api/actions/list-ad-accounts.js';
+import './meta-marketing-api/actions/list-businesses.js';
+import './meta-marketing-api/actions/list-campaigns.js';
+import './meta-marketing-api/actions/set-ad-set-status.js';
+import './meta-marketing-api/actions/set-ad-status.js';
+import './meta-marketing-api/actions/set-campaign-status.js';
+import './meta-marketing-api/actions/update-ad-set-budget.js';
+import './meta-marketing-api/actions/update-campaign-budget.js';
+
 // -- Integration: metabase
 import './metabase/syncs/users.js';
 import './metabase/actions/create-user.js';
