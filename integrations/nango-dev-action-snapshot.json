@@ -1,0 +1,628 @@
+{
+  "environment": "Nango Dev",
+  "captured_at_utc": "2026-10-15T08:16:03Z",
+  "evidence": "Nango API GET /integrations/{profile}/functions and /functions/{name}/code; exact source SHA-256",
+  "profiles": [
+    {
+      "provider": "amazon-selling-partner",
+      "provider_config_key": "amazon-selling-partner-beta-read-write",
+      "action_count": 33,
+      "actions": [
+        {
+          "action": "cg_amazon_create_sales_traffic_query",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.703Z",
+          "scopes": [],
+          "source_sha256": "ca966d0cb4234969e2dcb7b9626925806db9e8df77d5238a3ac3c7601f44185a",
+          "live_schema_sha256": "07039f4087492cca1d5ffa72fa59e8a07878b4e99adba96370c75beea8f2400f",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_create_sales_traffic_query.ts"
+        },
+        {
+          "action": "cg_amazon_create_sales_traffic_trends_query",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.664Z",
+          "scopes": [],
+          "source_sha256": "239857f1087bcda8de5e74cbdff55babef80f6158acb4250123029e0c65a4262",
+          "live_schema_sha256": "462b8a3d1569515d7ab15f8e0299e54ed9e39f3db4493fb67e87578a7d2ba699",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_create_sales_traffic_trends_query.ts"
+        },
+        {
+          "action": "cg_amazon_estimate_fees_batch",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.234Z",
+          "scopes": [],
+          "source_sha256": "37288671017356f6ae6ca7ddd779425cc41d44c6fefe0c5b8878fe65ea098926",
+          "live_schema_sha256": "48ce4117ad4b16df8472c1a575084f90414e623f1b4b6a6f2001df83405a42a3",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_estimate_fees_batch.ts"
+        },
+        {
+          "action": "cg_amazon_estimate_fees_by_asin",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.188Z",
+          "scopes": [],
+          "source_sha256": "58dd79b02f2ed65adea7d75ae47a7ca8ab4d9aa4fa372ac19a6295b2aa710d38",
+          "live_schema_sha256": "290edc37e0381f7f67da6f91088a6b96c6f9dbf36f83eebac4c91274cad3fb9d",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_estimate_fees_by_asin.ts"
+        },
+        {
+          "action": "cg_amazon_estimate_fees_by_sku",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.199Z",
+          "scopes": [],
+          "source_sha256": "bc2f74fec1d6f688d6cfa95b33fa5c3a38ff1980df4909d6d2d0d5f97f88ec2a",
+          "live_schema_sha256": "ab801345e28ccd4450a2fcffbc0a4a0144cb5cb52cae1e18a143a74a53375454",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_estimate_fees_by_sku.ts"
+        },
+        {
+          "action": "cg_amazon_get_account",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.190Z",
+          "scopes": [],
+          "source_sha256": "da5279f3f1760beb1d1b30648308ee8e59a1082963a817cd2b14d084619b42fd",
+          "live_schema_sha256": "9cb1cf0c1bff46359bd921ff8770bc04bf1cc32e1397e65f63db5bb65cf2834a",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_account.ts"
+        },
+        {
+          "action": "cg_amazon_get_browse_node_return_topics",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.188Z",
+          "scopes": [],
+          "source_sha256": "0faf685cc1d4142a01a710352a1e0aedb92177e1fcf0a6269b048d7b9453c985",
+          "live_schema_sha256": "10cee459399d4651adc0d2439abd7298b4609a7ef1a21df4e786166ca3eff5dd",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_browse_node_return_topics.ts"
+        },
+        {
+          "action": "cg_amazon_get_browse_node_return_trends",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.224Z",
+          "scopes": [],
+          "source_sha256": "52aaef7b9553f3cb215bb7805c7b1ed0f25c7c873f88c20c7f0029bec6f5c699",
+          "live_schema_sha256": "2fd9993b569b55dc497460684e6b40e543b14e078930e9a7d9c12429d389784d",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_browse_node_return_trends.ts"
+        },
+        {
+          "action": "cg_amazon_get_browse_node_review_topics",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.236Z",
+          "scopes": [],
+          "source_sha256": "211f28ccb8b66c666578508d2ca83baad938dea5b30983130139d13756dfc3ca",
+          "live_schema_sha256": "d0e2fd4d3814b08f1f357a028a3e8ef5f87c69a467fc58e42826ddb9567a151f",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_browse_node_review_topics.ts"
+        },
+        {
+          "action": "cg_amazon_get_catalog_item",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.234Z",
+          "scopes": [],
+          "source_sha256": "2a1a4a74b03fbdc3786800142df92557493ac8aa57135300db955b30a2c5a96a",
+          "live_schema_sha256": "5460934e1b8e378471755e8938233e4b154f2becd26abd60482e477ee5573e53",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_catalog_item.ts"
+        },
+        {
+          "action": "cg_amazon_get_competitive_summary",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.271Z",
+          "scopes": [],
+          "source_sha256": "66e7dfb828a6028a18e81a2c819c038b8d82f8b26c2d3314d7a301dd051a42b8",
+          "live_schema_sha256": "b5443c37723b6e1db2ddd9b95d0dddbad2018f388d3f4c76c09434ec173ccdb4",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_competitive_summary.ts"
+        },
+        {
+          "action": "cg_amazon_get_fba_inventory",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.200Z",
+          "scopes": [],
+          "source_sha256": "9cdb172b91b944de23e95795e44aa0ff69910a0cd8a4dc919db444d2fda8c188",
+          "live_schema_sha256": "c6ab5c68afda63f9dcf750c1427b18bcd557d79eded18f1ac27dfb7b58191195",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_fba_inventory.ts"
+        },
+        {
+          "action": "cg_amazon_get_featured_offer_expected_price",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.439Z",
+          "scopes": [],
+          "source_sha256": "81f4a40ddf10c1db2354e8c741307fcace5d6c6bc3706af5e6f968739d65adff",
+          "live_schema_sha256": "a03b0eabab2ef21976d850e8f26ba19b29934b11d31d9955c375d15e2899ac33",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_featured_offer_expected_price.ts"
+        },
+        {
+          "action": "cg_amazon_get_item_review_topics",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.441Z",
+          "scopes": [],
+          "source_sha256": "8bbad486c8b0100f9de2a0d8acb3793349facab899a18eb7bad799c8f2d832fa",
+          "live_schema_sha256": "6d73d9d57c411ba463bc7c8dc8fb2013cdd8fecb91262476f28dd05d2dd6ab33",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_item_review_topics.ts"
+        },
+        {
+          "action": "cg_amazon_get_item_review_trends",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.452Z",
+          "scopes": [],
+          "source_sha256": "cd8438884cd9e5150b219d7f79c5977f878ebbcede23202071a92469fe7d368d",
+          "live_schema_sha256": "d2c49e9391a5bf0a8b7234588334cb3b552ae16380363baa5f0529f19f3f1ec9",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_item_review_trends.ts"
+        },
+        {
+          "action": "cg_amazon_get_listing",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.441Z",
+          "scopes": [],
+          "source_sha256": "dac7e0bf9bc8b825aadb4c7afa0053ab81e263769ce2656411e6ba5422dcad05",
+          "live_schema_sha256": "0e0d1f4340e6bac14fe4340449b637cfc18086a9631d39f2e216fd46bae7467d",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_listing.ts"
+        },
+        {
+          "action": "cg_amazon_get_listing_restrictions",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.438Z",
+          "scopes": [],
+          "source_sha256": "fdfe8679935d844d7393a46d7bca02855cdc40043b1a10ee45330c075f4859a4",
+          "live_schema_sha256": "1d22ff0ec779df22f903fda96f061cbb1c739e15e44e3f492922cf1176761da5",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_listing_restrictions.ts"
+        },
+        {
+          "action": "cg_amazon_get_messaging_attributes",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.445Z",
+          "scopes": [],
+          "source_sha256": "d278a567f59d34ba34d051aa984b9a2d41ff99e834fee8748c6d4859ee34596e",
+          "live_schema_sha256": "7c39852aa93d7fed6bc616ea142cdb08c9c2bfa391cc6d7cbba7243426f85219",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_messaging_attributes.ts"
+        },
+        {
+          "action": "cg_amazon_get_order_metrics",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.440Z",
+          "scopes": [],
+          "source_sha256": "645ea472b746d26373f66ff04379173ee0d3db24e40ed28815f12b05c73ee8ee",
+          "live_schema_sha256": "4581d19ef0f637f9218f1ac14b67a837bc732e2000458a8301b9de304d3de4e6",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_order_metrics.ts"
+        },
+        {
+          "action": "cg_amazon_get_product_type_definition",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.475Z",
+          "scopes": [],
+          "source_sha256": "8e8a728a7856b35ab5de4e28b48d47ae7b9ab3f1fabe825d7680e443c1166001",
+          "live_schema_sha256": "6d4dc5f9521e89cb7b05417536c90e95621645c37263d6756245d31afcc052c0",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_get_product_type_definition.ts"
+        },
+        {
+          "action": "cg_amazon_list_balances",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.476Z",
+          "scopes": [],
+          "source_sha256": "46ced79da2961f5a7e37d64aa94d40e9d1b442a4908c916d03c51812b69f4002",
+          "live_schema_sha256": "d8c99460ed60459154da77258e626c160e7e92a9d7cd3c952ec0f36b34f9b057",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_list_balances.ts"
+        },
+        {
+          "action": "cg_amazon_list_financial_summaries",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.441Z",
+          "scopes": [],
+          "source_sha256": "6f73eea7cc93caa2789ff30234760885f0d9abdc800e79448cf295a1883c8d1d",
+          "live_schema_sha256": "276c6dc4729d594021921d6ecaac7aaaf407cf6f1217bfb3f650780520b23349",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_list_financial_summaries.ts"
+        },
+        {
+          "action": "cg_amazon_list_marketplace_participations",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.660Z",
+          "scopes": [],
+          "source_sha256": "625ec66e59e218f7d404bbc820e7068da1a510e6536e982524df25e4b64d63b2",
+          "live_schema_sha256": "cf9ffec2c9472dc1dab5f646ab23ade2b7d4dddde692170eb72f792d19371030",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_list_marketplace_participations.ts"
+        },
+        {
+          "action": "cg_amazon_list_reports",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.659Z",
+          "scopes": [],
+          "source_sha256": "d638b393883ef061324702e0aa2db368c3043e143fbce2a7039f8b9fe8199e1d",
+          "live_schema_sha256": "775b496cb7a62c80ceb5e4469926b3868c86fb4515cc2de34a06514449b8a387",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_list_reports.ts"
+        },
+        {
+          "action": "cg_amazon_list_transactions",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.666Z",
+          "scopes": [],
+          "source_sha256": "2da249a76aa02b824153a17e827ef87826b031a19a83757803c9cceaeac53651",
+          "live_schema_sha256": "f78f2ce48b138b03593359d269b80c8391d08dc66d7eb69ec2593866a4ab8411",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_list_transactions.ts"
+        },
+        {
+          "action": "cg_amazon_search_aplus_publish_records",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.701Z",
+          "scopes": [],
+          "source_sha256": "de823870c1dcefa2386ffa54ca5c81a5e3ca7026a14965d8866123246c01a88a",
+          "live_schema_sha256": "d809c8d064cf74acbceeb4a33073c52fb0a8730064181fe80a021f1819ff80a4",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_search_aplus_publish_records.ts"
+        },
+        {
+          "action": "cg_amazon_search_catalog_items",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.662Z",
+          "scopes": [],
+          "source_sha256": "237b39fd85b390e8edc8e360140939b98db80777f34a2cb6389f9cad43c4721e",
+          "live_schema_sha256": "e7da7ba10d68d9592f4d5b9271a86206ccf4a04e11fbee4ba3f6f818b7c15f0f",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_search_catalog_items.ts"
+        },
+        {
+          "action": "cg_amazon_search_listings",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.710Z",
+          "scopes": [],
+          "source_sha256": "9c019413c7b0ebd1a1506c41d237043e1b25627e69ab8ff4b57367ce210e620f",
+          "live_schema_sha256": "62eba3bc978a721dee59f7cd850c8e6355a495323cec105c66ddacce1b7ccd06",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_search_listings.ts"
+        },
+        {
+          "action": "cg_amazon_search_orders_v2026",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.667Z",
+          "scopes": [],
+          "source_sha256": "0313581a2424343d6d084763aaeb8af2c7161a2b43a06e57557d490982f87b8d",
+          "live_schema_sha256": "f5f8a8a23a42a270a6b5f8dd75539e8f66261d3d24db4101ae891f4aa1fc1d1d",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_search_orders_v2026.ts"
+        },
+        {
+          "action": "cg_amazon_search_product_types",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.690Z",
+          "scopes": [],
+          "source_sha256": "5c6778f544e0cd9a210bb20bf11c52ba5d10c6c53fc6a3c831652f85a943fd52",
+          "live_schema_sha256": "06d862a267ca7f199129451f6e3f8072dda7f6cdcedab981f0210b7a559386fc",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_search_product_types.ts"
+        },
+        {
+          "action": "cg_amazon_update_listing_attributes",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.847Z",
+          "scopes": [],
+          "source_sha256": "886da3b0b7eaa61c8af758aa99af1c093e2e3a0387cdc0ea4001835948d114e9",
+          "live_schema_sha256": "8be3e01ad74a6ae6749dd71be49252a2914f1a91b7d4080fd060447eb2f76761",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_update_listing_attributes.ts"
+        },
+        {
+          "action": "cg_amazon_update_listing_price",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.849Z",
+          "scopes": [],
+          "source_sha256": "09aaa023e39b451b1bfe25ed1e07aafb0f34e5e9b06c294e3ffdc31a8f3b43a2",
+          "live_schema_sha256": "3b1d888d9682ed491ff2056e439838454789515c1b5943fcd17604836d41f0ed",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_update_listing_price.ts"
+        },
+        {
+          "action": "cg_amazon_update_listing_quantity",
+          "source": "repo",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-24T14:35:19.848Z",
+          "scopes": [],
+          "source_sha256": "a94dce4bf5f55ac40b1b41a8425eb15d6c7ff106e79bfdaf8710235f5e3197be",
+          "live_schema_sha256": "9f0f028a51e5ed2a3cff5f3be1e43a2cab40c3d3a8444c400565a8049204fbad",
+          "path": "integrations/amazon-selling-partner/actions/cg_amazon_update_listing_quantity.ts"
+        }
+      ]
+    },
+    {
+      "provider": "google-search-console",
+      "provider_config_key": "google-search-console-read",
+      "action_count": 6,
+      "actions": [
+        {
+          "action": "cg_google_search_console_get_site",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-01T07:28:02.011Z",
+          "scopes": [
+            "https://www.googleapis.com/auth/webmasters.readonly"
+          ],
+          "source_sha256": "a0cc03d4b8827d697117af7255f83d8ba19071e722774a62f663f5a4fa8f2db4",
+          "live_schema_sha256": "c77bcaea2fff76b85d6cf926dd5d3e105f3b05c44474826d101c34095b3da10d",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_get_site.ts"
+        },
+        {
+          "action": "cg_google_search_console_get_sitemap",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-01T07:28:42.780Z",
+          "scopes": [
+            "https://www.googleapis.com/auth/webmasters.readonly"
+          ],
+          "source_sha256": "d7e9135b55f64bb37684d48f3c3a534fc61579fdb608b6e709795945b54f8ddf",
+          "live_schema_sha256": "947f89edc71c48ef9b7b673a357b6671311bd618bf1df91ca9e43fe6f34070ee",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_get_sitemap.ts"
+        },
+        {
+          "action": "cg_google_search_console_inspect_url",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-01T07:28:20.623Z",
+          "scopes": [
+            "https://www.googleapis.com/auth/webmasters.readonly"
+          ],
+          "source_sha256": "0026e8abd72aa1191298398d300dde7fa9d656a3fe7fc1aac08ea7a6232d1689",
+          "live_schema_sha256": "38ecbbae148aa8f142af3bd7d1563ebcf0bd7238f286a9e552056182c7dd2d17",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_inspect_url.ts"
+        },
+        {
+          "action": "cg_google_search_console_list_sitemaps",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-01T07:28:35.793Z",
+          "scopes": [
+            "https://www.googleapis.com/auth/webmasters.readonly"
+          ],
+          "source_sha256": "5ec7beba1606d52122fb69c074fe565924eac771a60dc113564a3f41ae153528",
+          "live_schema_sha256": "2b4f696a3829dae35fb5b51e2b548d65adcc4cc0ba80133eb4e69e7423a0fd31",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_list_sitemaps.ts"
+        },
+        {
+          "action": "cg_google_search_console_list_sites",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-30T08:01:07.804Z",
+          "scopes": [],
+          "source_sha256": "1ea30c7b33ae2cf0f19222e16d59a1fac078a930e847c2dda0ebd72c89b3809c",
+          "live_schema_sha256": "8dc27e79ff62f08c8029d9c5ec445e1bfa778a3281c454b7e64b351d7ce879fd",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_list_sites.ts"
+        },
+        {
+          "action": "cg_google_search_console_query_analytics",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-09-01T07:28:14.023Z",
+          "scopes": [
+            "https://www.googleapis.com/auth/webmasters.readonly"
+          ],
+          "source_sha256": "4233836984c0a326aa83782004b25984946a3c8879103179eb3b0b4e17642ece",
+          "live_schema_sha256": "14d3a343cd41af2cbad418043b9457aa42b9f97a01b4d97451e5c3f2f4f3d783",
+          "path": "integrations/google-search-console/actions/cg_google_search_console_query_analytics.ts"
+        }
+      ]
+    },
+    {
+      "provider": "meta-marketing-api",
+      "provider_config_key": "meta-marketing-read-write",
+      "action_count": 12,
+      "actions": [
+        {
+          "action": "cg_meta_marketing_api_create_ad",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:58.381Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "ca0f14c1cae5b8d57a22cc6d81e2a4334f487490c4fe5c0908008b4508d66ba0",
+          "live_schema_sha256": "9661e987f1ee8fd5e2647edfe598dcfa7c357b70c315f11066ac9ac0ab887cb6",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_create_ad.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_create_ad_creative",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:50.092Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "c7843e94881a2253c3723e7b3ca4abe6dadbc0b4ec3a9791afa3cab3bafc769d",
+          "live_schema_sha256": "4d70607f6239ea4401379604d49bf989f87a4b608f96e31b96f0f68c1d16feed",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_create_ad_creative.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_create_ad_set",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:28.984Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "5ee0b7f531965d43d6962ca646a8f93d137d65b692627670e88d4fb97346ff1d",
+          "live_schema_sha256": "f62e554ee1368769c48e8b4af2334d7cfbb0acbcb8eb06df65c1bf46e6954bcf",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_create_ad_set.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_create_campaign",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-26T06:36:57.973Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "1904d3ea8bdd342387215f85be5da1ee40ddbdea5c5ae96fae28c8d7005f68db",
+          "live_schema_sha256": "03311853821f94fb9eaf141adc8ba0735463810222527ae1c0deca00b2ff492d",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_create_campaign.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_get_insights",
+          "source": "standalone",
+          "enabled": true,
+          "version": "2.0.0",
+          "last_deployed": "2026-08-25T07:34:39.046Z",
+          "scopes": [
+            "ads_read"
+          ],
+          "source_sha256": "23ab0034fa3030b0965e5bfae8ed77b20db5362e66f36294e1f33e814d6762b2",
+          "live_schema_sha256": "a742119dea53aece2df039e17d6edc34ccdbbbcf3b08c0ae836992175daa8f50",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_get_insights.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_list_ad_accounts",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T07:34:20.128Z",
+          "scopes": [
+            "ads_read"
+          ],
+          "source_sha256": "ecdb4c5c5106b2a445d713390c4931f6c7991631742238df2d004ba1f365d725",
+          "live_schema_sha256": "07a5eaa232edb23710cd7a9806feb91c0a3f0e3572f8798a80c0564b0b5b081f",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_list_ad_accounts.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_list_campaigns",
+          "source": "standalone",
+          "enabled": true,
+          "version": "2.0.0",
+          "last_deployed": "2026-08-25T07:34:25.594Z",
+          "scopes": [
+            "ads_read"
+          ],
+          "source_sha256": "8134485e90b692d74f7abdbda1ed0db48d100e27bbaf27dcfcb25c554fa53fed",
+          "live_schema_sha256": "86422e3e432acf873477e7c222bd3d71badebac41d50be1e57e21ae75a89450d",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_list_campaigns.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_set_ad_set_status",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:35.460Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "03e0f9682b2c444cb46a945774e4ab0ee244622067e7f29b2c012e7f1bccb169",
+          "live_schema_sha256": "b07ab6012b74341b888dafd0f6fdf6e344e3ff048b42bea2fb286cfa6492c105",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_set_ad_set_status.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_set_ad_status",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:51:03.908Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "2218f36c9e5a6ec2b5dd7f4dbba326dba168c90b330d5fd9a5a01d5cbf14a980",
+          "live_schema_sha256": "b940c80926552a808125d55bacaeaad8062b05ee9d2eea8ceec1d4858ff31571",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_set_ad_status.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_set_campaign_status",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:13.349Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "27dd271e46790c3653f8865319514954b09f08b8980f128868cf79029234e10e",
+          "live_schema_sha256": "2ab1a5c75da6f3b88ed8f343c0a7a6d052ed425156b1de77aacbd408e18e9f3b",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_set_campaign_status.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_update_ad_set_budget",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:44.273Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "62a4fff5043d15034a3eb29a1a645de7a4cc4326be2a21cbabaa89de46141f25",
+          "live_schema_sha256": "3e79a07755b0cccc7c8b22ab762a31048e3b8aa5745bd41908280308d8634c92",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_update_ad_set_budget.ts"
+        },
+        {
+          "action": "cg_meta_marketing_api_update_campaign_budget",
+          "source": "standalone",
+          "enabled": true,
+          "version": "1.0.0",
+          "last_deployed": "2026-08-25T11:50:23.460Z",
+          "scopes": [
+            "ads_management"
+          ],
+          "source_sha256": "ecb8333c864ca5e2d9f647fff06d87edd2c6be4b04c27835951cbf10f9a8e929",
+          "live_schema_sha256": "5400a69c3b27894dded4f77678f7bc6a1d316604845e8d4b6816ece214348531",
+          "path": "integrations/meta-marketing-api/actions/cg_meta_marketing_api_update_campaign_budget.ts"
+        }
+      ]
+    }
+  ],
+  "profile_action_counts": {
+    "amazon-selling-partner-beta-read-write": 33,
+    "google-search-console-read": 6,
+    "meta-marketing-read-write": 12
+  }
+}

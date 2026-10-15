@@ -2838,6 +2838,14 @@ import './google-mail/actions/update-vacation-settings.js';
 import './google-mail/actions/verify-send-as-alias.js';
 import './google-mail/actions/watch-mailbox.js';
 
+// -- Integration: google-search-console
+import './google-search-console/actions/cg_google_search_console_get_site.js';
+import './google-search-console/actions/cg_google_search_console_get_sitemap.js';
+import './google-search-console/actions/cg_google_search_console_inspect_url.js';
+import './google-search-console/actions/cg_google_search_console_list_sitemaps.js';
+import './google-search-console/actions/cg_google_search_console_list_sites.js';
+import './google-search-console/actions/cg_google_search_console_query_analytics.js';
+
 // -- Integration: google-sheet
 import './google-sheet/syncs/rows.js';
 import './google-sheet/syncs/worksheets.js';
@@ -3900,6 +3908,20 @@ import './meilisearch/actions/get-documents.js';
 import './meilisearch/actions/get-task.js';
 import './meilisearch/actions/search-documents.js';
 import './meilisearch/actions/update-documents.js';
+
+// -- Integration: meta-marketing-api
+import './meta-marketing-api/actions/cg_meta_marketing_api_create_ad.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_create_ad_creative.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_create_ad_set.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_create_campaign.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_get_insights.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_list_ad_accounts.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_list_campaigns.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_set_ad_set_status.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_set_ad_status.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_set_campaign_status.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_update_ad_set_budget.js';
+import './meta-marketing-api/actions/cg_meta_marketing_api_update_campaign_budget.js';
 
 // -- Integration: metabase
 import './metabase/syncs/users.js';
