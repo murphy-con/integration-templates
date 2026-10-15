@@ -272,6 +272,41 @@ import './algolia/actions/update-object.js';
 import './algolia/actions/update-rule.js';
 import './algolia/actions/update-synonym.js';
 
+// -- Integration: amazon-selling-partner
+import './amazon-selling-partner/actions/cg_amazon_create_sales_traffic_query.js';
+import './amazon-selling-partner/actions/cg_amazon_create_sales_traffic_trends_query.js';
+import './amazon-selling-partner/actions/cg_amazon_estimate_fees_batch.js';
+import './amazon-selling-partner/actions/cg_amazon_estimate_fees_by_asin.js';
+import './amazon-selling-partner/actions/cg_amazon_estimate_fees_by_sku.js';
+import './amazon-selling-partner/actions/cg_amazon_get_account.js';
+import './amazon-selling-partner/actions/cg_amazon_get_browse_node_return_topics.js';
+import './amazon-selling-partner/actions/cg_amazon_get_browse_node_return_trends.js';
+import './amazon-selling-partner/actions/cg_amazon_get_browse_node_review_topics.js';
+import './amazon-selling-partner/actions/cg_amazon_get_catalog_item.js';
+import './amazon-selling-partner/actions/cg_amazon_get_competitive_summary.js';
+import './amazon-selling-partner/actions/cg_amazon_get_fba_inventory.js';
+import './amazon-selling-partner/actions/cg_amazon_get_featured_offer_expected_price.js';
+import './amazon-selling-partner/actions/cg_amazon_get_item_review_topics.js';
+import './amazon-selling-partner/actions/cg_amazon_get_item_review_trends.js';
+import './amazon-selling-partner/actions/cg_amazon_get_listing.js';
+import './amazon-selling-partner/actions/cg_amazon_get_listing_restrictions.js';
+import './amazon-selling-partner/actions/cg_amazon_get_messaging_attributes.js';
+import './amazon-selling-partner/actions/cg_amazon_get_order_metrics.js';
+import './amazon-selling-partner/actions/cg_amazon_get_product_type_definition.js';
+import './amazon-selling-partner/actions/cg_amazon_list_balances.js';
+import './amazon-selling-partner/actions/cg_amazon_list_financial_summaries.js';
+import './amazon-selling-partner/actions/cg_amazon_list_marketplace_participations.js';
+import './amazon-selling-partner/actions/cg_amazon_list_reports.js';
+import './amazon-selling-partner/actions/cg_amazon_list_transactions.js';
+import './amazon-selling-partner/actions/cg_amazon_search_aplus_publish_records.js';
+import './amazon-selling-partner/actions/cg_amazon_search_catalog_items.js';
+import './amazon-selling-partner/actions/cg_amazon_search_listings.js';
+import './amazon-selling-partner/actions/cg_amazon_search_orders_v2026.js';
+import './amazon-selling-partner/actions/cg_amazon_search_product_types.js';
+import './amazon-selling-partner/actions/cg_amazon_update_listing_attributes.js';
+import './amazon-selling-partner/actions/cg_amazon_update_listing_price.js';
+import './amazon-selling-partner/actions/cg_amazon_update_listing_quantity.js';
+
 // -- Integration: amplitude
 import './amplitude/syncs/annotation-categories.js';
 import './amplitude/syncs/annotations.js';
